@@ -6,48 +6,155 @@
   <title>L'Objectif de Timéo</title>
   <style>
     /* Reset CSS */
-    /* ... */
+
+    * {
+      box-sizing: border-box;
+    }
 
     body {
-      /* ... */
-      background-color: #f7f7f7; /* Modifier cette valeur pour changer la couleur de fond */
-      color: #333; /* Modifier cette valeur pour changer la couleur du texte principal */
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
     }
 
     /* En-tête */
     header {
-      background-color: #2c3e50; /* Modifier cette valeur pour changer la couleur de fond de l'en-tête */
-      /* ... */
+      background-color: #2c3e50;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin: 0;
     }
 
     /* Navigation */
     nav {
-      background-color: #34495e; /* Modifier cette valeur pour changer la couleur de fond de la navigation */
-      /* ... */
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
     }
 
     /* Section Accueil */
     .accueil {
-      background-color: #ecf0f1; /* Modifier cette valeur pour changer la couleur de fond de la section Accueil */
-      /* ... */
+      background-color: #ecf0f1;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .accueil h1 {
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .accueil p {
+      font-size: 20px;
+      color: #777;
+      margin-bottom: 0;
     }
 
     /* Section Projets */
     .projets {
-      background-color: #dfe6e9; /* Modifier cette valeur pour changer la couleur de fond de la section Projets */
-      /* ... */
+      background-color: #dfe6e9;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .projets h2 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .projets .projet {
+      margin-bottom: 30px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: left;
+    }
+
+    .projets .projet h3 {
+      font-size: 24px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .projets .projet p {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 0;
     }
 
     /* Section Contact */
     .contact {
-      background-color: #fff; /* Modifier cette valeur pour changer la couleur de fond de la section Contact */
-      /* ... */
+      background-color: #fff;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact form input,
+    .contact form textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact form textarea {
+      resize: vertical;
+    }
+
+    .contact form button {
+      padding: 10px 20px;
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
     }
 
     /* Pied de page */
     footer {
-      background-color: #2c3e50; /* Modifier cette valeur pour changer la couleur de fond du pied de page */
-      /* ... */
+      background-color: #2c3e50;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -55,46 +162,56 @@
   <!-- En-tête -->
   <header>
     <h1>L'Objectif de Timéo</h1>
-    <h2>Capturer l'instant, en un seul clic !</h2>
   </header>
 
   <!-- Navigation -->
   <nav>
-    <!-- ... -->
+    <a href="#accueil">Accueil</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <!-- Section Accueil -->
   <section id="accueil" class="accueil">
-    <h1>À propos de moi</h1>
-    <p>Bienvenue, je m’appelle Timéo, j'ai 19 ans et je suis actuellement en baccalauréat professionnel de photographie.</p>
-    <p>Depuis tout petit, le monde de la photographie et de la vidéo me fascine énormément ! Ce Book me permet de vous montrer mon univers !</p>
-    <p><strong>Autre texte :</strong></p>
-    <p>Bienvenue dans mon univers, un jeune photographe passionné par la photo et la vidéo. À seulement 15 ans, j'ai acquis une expérience précieuse en travaillant avec diverses personnes et collectivités. Je me suis spécialisé dans les shootings photos, les photos publicitaires, les montages photo ainsi que la réalisation et le cadrage de vidéos et de courts-métrages.</p>
-    <p>Si vous êtes à la recherche d'un talent créatif pour immortaliser des moments uniques, ne cherchez pas plus loin ! Je vous propose des shootings photos en intérieur et en extérieur, dans les environs de Lunéville, Nancy, Blainville-sur-l'Eau et Saint-Dié-des-Vosges.</p>
-    <p>Vous avez besoin d'aide pour le cadrage de vos vidéos ou de vos courts-métrages ? Je suis là pour vous ! En plus de mes compétences en photographie, je peux également réaliser des montages photo sur mesure, donnant vie à vos souvenirs.</p>
-    <p>Ne perdez plus de temps, contactez-moi dès maintenant sur Instagram et donnons vie à votre vision artistique ensemble. Que vous souhaitiez capturer des instants magiques, créer des vidéos saisissantes ou revivre des souvenirs à travers des montages photo uniques, je suis là pour vous accompagner.</p>
-    <p>Faites confiance à mon talent et à ma passion pour créer des œuvres visuelles qui vous émerveilleront. Je suis impatient de collaborer avec vous et de donner vie à votre imagination. Alors, contactez-moi dès maintenant et passons une excellente journée ensemble !</p>
-    <p>À très bientôt !</p>
+    <h1>Bienvenue sur mon portfolio !</h1>
+    <p>Je suis passionné par la technologie et j'aime créer des projets innovants.</p>
+    <!-- À propos de moi -->
+    <div class="about">
+      <h2>À propos de moi</h2>
+      <p>Bienvenue, je m'appelle Timéo, j'ai 19 ans et je suis actuellement en baccalauréat professionnel de Photographie. Depuis tout petit, le monde de la photographie et de la vidéo me fascine énormément ! Ce Book me permet de vous montrer mon univers !</p>
+    </div>
   </section>
 
   <!-- Section Projets -->
   <section id="projets" class="projets">
-    <!-- ... -->
+    <h2>Mes Projets</h2>
+    <div class="projet">
+      <h3>Projet 1</h3>
+      <p>Description du projet 1.</p>
+    </div>
+    <div class="projet">
+      <h3>Projet 2</h3>
+      <p>Description du projet 2.</p>
+    </div>
+    <!-- Ajoute ici tes autres projets -->
   </section>
 
   <!-- Section Contact -->
   <section id="contact" class="contact">
-    <!-- ... -->
+    <h2>Contact</h2>
+    <p>N'hésite pas à me contacter pour discuter de projets intéressants.</p>
+    <form>
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
   </section>
 
   <!-- Pied de page -->
   <footer>
-    <!-- ... -->
-    <p>Mes coordonnées :</p>
-    <p>Email: christophemeo544@gmail.com</p>
-    <p>Instagram: <a href="https://www.instagram.com/les_photos_de_tm/">https://www.instagram.com/les_photos_de_tm/</a></p>
-    <p>Youtube: <a href="https://www.youtube.com/channel/UCkrNlKIN14Df1cQ_eMDZ8SA?app=desktop">https://www.youtube.com/channel/UCkrNlKIN14Df1cQ_eMDZ8SA?app=desktop</a></p>
-    <p>TikTok: <a href="https://www.tiktok.com/@les_photos_de_tm">https://www.tiktok.com/@les_photos_de_tm</a></p>
+    &copy; 2023 L'Objectif de Timéo | Portfolio réalisé avec passion
   </footer>
+
 </body>
 </html>
