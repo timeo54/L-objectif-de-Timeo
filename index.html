@@ -11,12 +11,41 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
     }
 
-    /* Ajoute ici tes styles personnalisés pour chaque section */
+    h1, h2, h3 {
+      margin: 0;
+    }
 
-    /* Exemple pour une section "Accueil" */
+    /* En-tête */
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
 
+    header h1 {
+      font-size: 32px;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #555;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+
+    /* Section Accueil */
     .accueil {
       background-color: #f2f2f2;
       padding: 50px;
@@ -24,17 +53,17 @@
     }
 
     .accueil h1 {
-      font-size: 32px;
+      font-size: 36px;
       color: #333;
+      margin-bottom: 20px;
     }
 
     .accueil p {
-      font-size: 18px;
+      font-size: 20px;
       color: #777;
     }
 
-    /* Exemple pour une section "Projets" */
-
+    /* Section Projets */
     .projets {
       background-color: #e6e6e6;
       padding: 50px;
@@ -44,15 +73,22 @@
     .projets h2 {
       font-size: 28px;
       color: #333;
+      margin-bottom: 20px;
     }
 
     .projets .projet {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: left;
     }
 
     .projets .projet h3 {
       font-size: 24px;
       color: #555;
+      margin-bottom: 10px;
     }
 
     .projets .projet p {
@@ -60,33 +96,41 @@
       color: #777;
     }
 
-    /* Ajoute ici d'autres styles pour tes autres sections */
+    /* Section Contact */
+    .contact {
+      background-color: #fff;
+      padding: 50px;
+      text-align: center;
+    }
 
-  </style>
-</head>
-<body>
-  <!-- Section Accueil -->
-  <section class="accueil">
-    <h1>Accueil</h1>
-    <p>Bienvenue sur mon portfolio !</p>
-    <!-- Ajoute ici ton contenu pour la section Accueil -->
-  </section>
+    .contact h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+    }
 
-  <!-- Section Projets -->
-  <section class="projets">
-    <h2>Mes Projets</h2>
-    <div class="projet">
-      <h3>Projet 1</h3>
-      <p>Description du projet 1.</p>
-    </div>
-    <div class="projet">
-      <h3>Projet 2</h3>
-      <p>Description du projet 2.</p>
-    </div>
-    <!-- Ajoute ici tes autres projets -->
-  </section>
+    .contact p {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 30px;
+    }
 
-  <!-- Ajoute ici tes autres sections avec leurs contenus -->
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-</body>
-</html>
+    .contact form input,
+    .contact form textarea {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact form button {
+      padding: 10px 20px;
+      background-color: #333;
+      color
